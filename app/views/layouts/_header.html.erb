@@ -1,10 +1,10 @@
   <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
-    <%= link_to "portfolio app",  '#', id:"logo" %>
+    <%= link_to "portfolio app",  root_path , id:"logo" %>
     <nav>
     <ul class="nav navbar-nav navbar-right">
-    <li><button type="button" name="" value="" class="btn btn-lg btn-primary">Sign in</button></li>
-    <li><button type="button" name="" value="" class="btn btn-lg btn-primary">Sign up</button></li>
+    <li><%= link_to "Login in", "#"%></li>
+    <li><%= link_to "Login up", signup_path %></li>
     </ul>
     </nav>
   </header>
