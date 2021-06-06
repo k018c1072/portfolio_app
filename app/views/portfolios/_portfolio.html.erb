@@ -1,0 +1,9 @@
+<li id="portfolio-<%= portfolio.id %>">
+<a href=<%= portfolio.url%>>
+  <div class="title"><h4><%= portfolio.title %></h4></div>
+  <span class="description"><%= portfolio.description %></span>
+  <div class="timestamp">
+    Posted <%= time_ago_in_words(portfolio.created_at) %> ago.
+  </div>
+  </a>
+</li>

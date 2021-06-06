@@ -1,1 +1,18 @@
-<h1>こんにちは<%= current_user.name%>  <%= current_user.email%></h1>
+<% provide(:title, @user.name) %>
+<div class="row">
+    <div class = "left">
+        <h1>ユーザー名:<%= @user.name %>  </h1>
+        <% if @user.id == current_user.id %>
+            <%= link_to "投稿する", new_portfolio_path, class: "btn btn-lg btn-primary "%>
+        <% end %>
+    </div>
+    <div class="col-md-8 right">
+        <% if @user.portfolios.any? %>
+        <h3>Portfolios (<%= @user.portfolios.count %>)</h3>
+        <ol class="portfolios">
+            <%= render @portfolios %>
+        </ol>
+        <%= will_paginate @portfolios %>
+        <% end %>
+    </div>
+</div>

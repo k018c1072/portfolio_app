@@ -3,7 +3,7 @@
     <%= link_to "portfolio app",  root_path , id:"logo" %>
     <nav>
       <% if user_signed_in? %>
-        <strong><%= link_to "マイページ", mypage_path %></strong>
+        <strong><%= link_to "マイページ", user_path(id: current_user) %></strong>
         <%= link_to 'プロフィール変更', edit_user_registration_path %>
         <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
       <% else %>
