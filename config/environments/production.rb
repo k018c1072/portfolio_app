@@ -118,7 +118,7 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
   # mailer setting
-  config.action_mailer.default_url_options = { :host => 'https://dry-reef-66150.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'https://dry-reef-66150.herokuapp.com' }
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -128,6 +128,6 @@ Rails.application.configure do
     :domain => 'heroku.com',
     :user_name => "app216568079@heroku.com",
     :password => "tkz2axuw1162",
-    :authentication => 'login'
+    :authentication => :plain
   }
 end
