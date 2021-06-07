@@ -1,9 +1,16 @@
-<li id="portfolio-<%= portfolio.id %>">
-<a href=<%= portfolio.url%>>
-  <div class="title"><h4><%= portfolio.title %></h4></div>
-  <span class="description"><%= portfolio.description %></span>
-  <div class="timestamp">
-    Posted <%= time_ago_in_words(portfolio.created_at) %> ago.
-  </div>
-  </a>
-</li>
+<div class ="name_box">
+  <%= link_to gravatar_for(portfolio.user, size: 50), portfolio.user %>
+  <span class="name"><%= link_to portfolio.user.name, portfolio.user %></span>
+</div>
+<div class = "linkBox">
+  <a href=<%= portfolio.url%> class = "portfolio_url"></a>
+  <li id="portfolio-<%= portfolio.id %>">
+        <div class="box">
+          <p class="title"><%= portfolio.title %></p>
+          <p class="description"><%= portfolio.description %></p>
+          <p class="timestamp">
+            Posted <%= time_ago_in_words(portfolio.created_at) %> ago.
+          </p>
+        </div>
+  </li>
+</div>

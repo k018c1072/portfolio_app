@@ -1,14 +1,19 @@
   <header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container">
     <%= link_to "portfolio app",  root_path , id:"logo" %>
     <nav>
-      <% if user_signed_in? %>
-        <strong><%= link_to "マイページ", user_path(id: current_user) %></strong>
-        <%= link_to 'プロフィール変更', edit_user_registration_path %>
-        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-      <% else %>
-        <%= link_to 'サインアップ', new_user_registration_path %>
-        <%= link_to 'ログイン', new_user_session_path %>
-      <% end %>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li><%= link_to "マイページ", user_path(id: current_user) %></li>
+          <li><%= link_to "閲覧", portfolios_path%></li>
+          <li><%= link_to "投稿", new_portfolio_path%></li>
+          <li><%= link_to 'プロフィール変更', edit_user_registration_path %></li>
+          <li><%= link_to "ユーザー一覧", users_path %></li>
+          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "閲覧", portfolios_path%></li>
+          <li><%= link_to 'サインアップ', new_user_registration_path %></li>
+          <li><%= link_to 'ログイン', new_user_session_path %></li>
+        <% end %>
+      </ul>
     </nav>
   </header>

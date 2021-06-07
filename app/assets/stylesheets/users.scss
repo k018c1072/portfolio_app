@@ -1,14 +1,11 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.row {
-  display: flex;
-  justify-content: space-around;
+
+.title {
+  font-size: 25px;
 }
 
-.right {
-  padding-left: 200px;
-  h3 {
-    padding-left: 40px;
-  }
+.description {
+  font-size: 20px;
 }

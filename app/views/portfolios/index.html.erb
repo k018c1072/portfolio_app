@@ -1,3 +1,11 @@
-<% @portfolios.each do |n| %>
-    <p> <%= n.title %> </p>
+<% if @portfolios.any? %>
+    <div class = "paginate_box">
+        <%= will_paginate @portfolios%>
+    </div>
+        <ol class="portfolios">
+            <%= render @portfolios %>
+        </ol>
+    <div class = "paginate_box">
+        <%= will_paginate @portfolios%>
+    </div>
 <% end %>

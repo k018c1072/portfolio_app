@@ -1,14 +1,10 @@
 class PortfoliosController < ApplicationController
     def index
-        @portfolios = Portfolio.all
+        @portfolios = Portfolio.paginate(page: params[:page], per_page: 5)
     end
 
     def new
         @portfolio = Portfolio.new
-    end
-
-    def show
-
     end
 
     def create
