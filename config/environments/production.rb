@@ -119,15 +119,15 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
   # mailer setting
   config.action_mailer.default_url_options = { :host => 'https://dry-reef-66150.herokuapp.com' }
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :enable_starttls_auto => true,
-    :address => "smtp.gmail.com",
+    :address => "smtp.sendgrid.net",
     :port => 587,
-    :domain => 'smtp.gmail.com',
-    :user_name => "aporo0323choco@gmail.com",
-    :password => "Chiro0845",
+    :domain => 'heroku.com',
+    :user_name => "app216568079@heroku.com",
+    :password => "tkz2axuw1162",
     :authentication => 'login'
   }
 end
