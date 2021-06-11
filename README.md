@@ -1,24 +1,39 @@
-# README
+# Portfolio summary
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Portfolio Submission and Viewing Web Service
 
-Things you may want to cover:
+## Description 
 
-* Ruby version
+A web service for people who are not yet employed in the IT industry to post and view their portfolios. No need to create an account if you just want to browse.
 
-* System dependencies
+***DEMO:***
 
-* Configuration
+![Demo](https://user-images.githubusercontent.com/53030634/121617554-33594a80-caa0-11eb-8058-e54a2831239d.gif)
 
-* Database creation
+## Features
 
-* Database initialization
+- reading
+- Posting
+- User List
+- My Page
+- Edit Profile
 
-* How to run the test suite
+## Requirement
 
-* Services (job queues, cache servers, search engines, etc.)
+- Ruby '2.6.6'
+- rails '>= 6.1.3.2'
+- mysql2 '~> 0.5'
 
-* Deployment instructions
+## Usage
 
-* ...
+1. sign up
+2. you will receive a confirmation email.
+3. sign in
+4. post and view
+
+## Author
+
+Yuki
+mail to: aporo0323choco@gmail.com
+
+## License
