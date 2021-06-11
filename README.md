@@ -2,11 +2,11 @@
 
 Portfolio Submission and Viewing Web Service
 
-## Description 
+## Description
 
 A web service for people who are not yet employed in the IT industry to post and view their portfolios. No need to create an account if you just want to browse.
 
-***DEMO:***
+**_DEMO:_**
 
 ![Demo](https://user-images.githubusercontent.com/53030634/121620425-43bff400-caa5-11eb-9e4c-2d1045fb8281.gif)
 
@@ -35,5 +35,3 @@ A web service for people who are not yet employed in the IT industry to post and
 
 Yuki
 mail to: aporo0323choco@gmail.com
-
-## License
