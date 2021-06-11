@@ -8,7 +8,7 @@ A web service for people who are not yet employed in the IT industry to post and
 
 ***DEMO:***
 
-![Demo](https://user-images.githubusercontent.com/53030634/121617554-33594a80-caa0-11eb-8058-e54a2831239d.gif)
+![Demo](https://user-images.githubusercontent.com/53030634/121620425-43bff400-caa5-11eb-9e4c-2d1045fb8281.gif)
 
 ## Features
 
