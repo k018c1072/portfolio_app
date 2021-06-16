@@ -8,6 +8,9 @@
 
 .description_home {
   margin: 0 auto;
+  p {
+    font-size: 2rem;
+  }
 }
 
 .button {
@@ -17,7 +20,7 @@
   }
 }
 
-body {
+.bgimg {
   background-image: image-url("pexels-hasan-albari-1229861.jpg");
   background-size: cover;
 
@@ -35,17 +38,7 @@ h1 {
   text-shadow: 6px 5px 2px black;
 }
 
-p {
-  font-size: 2rem;
-}
-
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-}
-
+/*
 body::before {
   content: "";
   position: absolute;
@@ -56,3 +49,4 @@ body::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
 }
+*/
