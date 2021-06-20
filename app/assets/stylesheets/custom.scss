@@ -13,6 +13,16 @@ body {
 }
 */
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
 section {
   overflow: auto;
 }
@@ -73,7 +83,7 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: red;
     text-decoration: none;
   }
 }
@@ -174,4 +184,15 @@ aside {
 
 .paginate_box {
   text-align: center;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+p.notice {
+  margin-top: 50px;
+}
+.alert {
+  margin-top: 50px;
 }

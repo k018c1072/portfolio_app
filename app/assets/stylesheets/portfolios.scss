@@ -16,6 +16,8 @@ ol li {
 
 .linkBox {
   position: relative;
+  width: 50%;
+  margin: 0 auto;
   .portfolio_url {
     display: block;
     position: absolute;
@@ -27,9 +29,15 @@ ol li {
 }
 
 .name_box {
-  margin-left: 20px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .box {
   margin-left: 10px;
+}
+
+.portfolios {
+  width: 100%;
+  margin: 0 auto;
 }

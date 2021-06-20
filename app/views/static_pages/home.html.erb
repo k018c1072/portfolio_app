@@ -1,13 +1,15 @@
 <% provide(:title, "Portfolio summary") %>
-<div class="icon">
-    <%= image_tag 'icon/falling_star.svg'%>
-</div>
-<h1>IT業界未就職者のためのプラットフォーム</h1>
-<div class = "description_home">
-    <p>Portfolioは、IT業界未就職の方のポートフォリオを集めたサイトです。
-閲覧だけならアカウントは不要ですが、自分のポートフォリオを提出するにはアカウントの作成とサインインが必要です。</p>
-</div>
-<div class="button">
-    <%= link_to "閲覧", portfolios_path, class: "btn btn-lg btn-primary "%>
-    <%= link_to "投稿する", new_user_registration_path, class: "btn btn-lg btn-primary "%>
+<div class = "main bgimg">
+    <div class="icon">
+        <%= image_tag 'icon/falling_star.svg'%>
+    </div>
+    <h1 class = "Overview">IT業界未就職者のためのプラットフォーム</h1>
+    <div class = "description_home">
+        <p>Portfolioは、IT業界未就職の方のポートフォリオを集めたサイトです。
+    閲覧だけならアカウントは不要ですが、自分のポートフォリオを提出するにはアカウントの作成とサインインが必要です。</p>
+    </div>
+    <div class="button">
+        <%= link_to "閲覧", portfolios_path, class: "btn btn-lg btn-primary "%>
+        <%= link_to "投稿する", new_user_registration_path, class: "btn btn-lg btn-primary "%>
+    </div>
 </div>
