@@ -1,23 +1,23 @@
 // Place all the styles related to the portfolios controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+/*
 ol li {
   border-style: groove;
   border-width: thick;
   padding: 5px;
-  margin: 20px;
   list-style: none;
   margin-bottom: 30px;
 }
-
+*/
 .name {
   font-size: 20px;
 }
 
 .linkBox {
   position: relative;
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  margin: 20px auto 20px auto;
   .portfolio_url {
     display: block;
     position: absolute;
@@ -29,8 +29,8 @@ ol li {
 }
 
 .name_box {
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  margin: 20px auto 0 auto;
 }
 
 .box {
@@ -40,4 +40,22 @@ ol li {
 .portfolios {
   width: 100%;
   margin: 0 auto;
+  padding: 0;
+}
+
+.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+  border-radius: 0.5rem;
+}
+.btn--orange:hover {
+  margin-top: 23px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
